@@ -2,9 +2,9 @@
 
 
 class threading extends Thread{      //extends to Thread which is store in the package of java
-    public void run(){
+    public void run(){ //----this thread is work when method name is run and in calling part in main section is start
         int i =0;
-        while(i<200){
+        while(i<100){
             System.out.println("thread is chatting");
             System.out.println("i am happy");
             i++;
@@ -13,9 +13,9 @@ class threading extends Thread{      //extends to Thread which is store in the p
 }
 
 class threading2 extends Thread{
-    public void run(){
+    public void run(){    //----this thread is work when method name is run and in calling part in main section is start
         int i = 0;
-        while(i<200){
+        while(i<100){
             System.out.println("thread is playing");
             System.out.println("i am sad");
             i++;

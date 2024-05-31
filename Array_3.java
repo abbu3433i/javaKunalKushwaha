@@ -5,35 +5,40 @@ import java.util.Arrays;
 public class Array_3 {
     public static void main(String[] args) {
 // *************2D Array *************
-        int[][] arr2D = {
-            {1,2,3},
-            {7,2},
-            {5,8,3,9}
+        int[][] arr2D = {  
+            {1,2,3},           //
+            {7,2},             //----all three store in heap but take different memory
+            {5,8,3,9}          //
         };
 
          //output 
          //arr ki 'Every row' ke element ko print kar do
-         for (int[] row : arr2D) {
-            System.out.println(Arrays.toString(row));
-         }
+        //  for (int[] row : arr2D) {
+        //     System.out.println(Arrays.toString(row));
+        //  }
 
 
+
+        
          /**********Taking user input in 2D array********* */
 
         // Scanner sc = new Scanner(System.in);
-        // int[][] arr2D = new int[3][3];
-        // System.out.println(arr2D.length);    //no of row
+        // int[][] arr2 = new int[3][3]; //-----------------------
+        // System.out.println(arr2.length);    //no of row
 
         // //input
-        // for(int row=0; row<arr2D.length; row++){
+        // for(int row=0; row< arr2.length; row++){
         //     //for column
-        //     for(int col=0; col<arr2D[row].length; col++){
-        //         int[row][col] = sc.nextInt();
+        //     for(int col=0; col< arr2[row].length; col++){
+        //         arr2[row][col] = sc.nextInt();
         //     }
         // }
 
-    
-
+        // //output
+        // for(int row=0; row< arr2.length; row++){
+        //     System.out.println(Arrays.toString(arr2[row]));
+        // }
+        
 
     /******************max value in 2D array************* */
 
@@ -58,7 +63,7 @@ public class Array_3 {
 //             }
 //         }
 //         return max;
-//     }
+    }
 
 
 

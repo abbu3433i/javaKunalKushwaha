@@ -64,7 +64,7 @@ public class d_7CycS2 {
     //             return index+1;  //arr ki value or index mismatch ho to index+1 return kar do bahi smallest value he...
     //         }
     //     }
-    //     return arr.length+1;
+    //     return arr.length+1;   //----agar arr ki len tak koi missing elem nhi he to len+1 kar do len ke just baad bala missing hoga
     // }
 
     // static void swap(int[] arr, int first, int second){

@@ -1,9 +1,11 @@
 import java.util.Arrays;
 
 public class d_3BS1 {
+    //     /*1.*********ceiling of a no. -->smallest no. ho par target se bada ho************ */
+    
+    // [end    ans     st] ----condition while(st<=end) violet jese hi hue to st aage ho jayega or end piche 
+    
     // public static void main(String[] args) {
-    //     /*1.*********ceiling me target value se next greater value hi milegi hamesha************ */
-
     //     int[] arr = {2,3,5,9,14,16,18};
     //     int target = 10;
     //     System.out.println(ceiling(arr,target));    
@@ -15,7 +17,7 @@ public class d_3BS1 {
     //         int st = 0;
     //         int end = arr.length-1;
 
-    //     while(st<=end){
+    //     while(st<=end){    
             
     //         int mid = (st + end)/2;
 
@@ -37,18 +39,17 @@ public class d_3BS1 {
     //         }
     //     }
 
-    //     return st;    //here st value will return [mid+1]
+    //     return st;    //here st value will return [mid+1]->smallest no ho par target se bada ho 
     //     }
 
 
 
 
-
-    //     /***2.********Floor me target value se before smaller value hi milegi hamesha************ */
+    //     /***2.********Floor of a no.-->gretest no ho par target se chota ho************ */
 
     // public static void main(String[] args) {
     //     int[] arr = {2,3,5,9,14,16,18};
-    //     int target = 19;
+    //     int target = 15;
     //     System.out.println(Floor(arr,target));    
     // }//main
 
@@ -81,10 +82,11 @@ public class d_3BS1 {
     //         }
     //     }
 
-    //     return end;    //here end value will return [mid-1]
+    //     return end;    //here end value will return [mid-1] mtlb-->gretest no ho par target se chota ho
     //     }
 
-        
+
+
 
 
     /*********[FB interview question]******first ans last index of the target element******* */
@@ -103,13 +105,12 @@ public class d_3BS1 {
     //    //ye esa function he jo st index or last index dono ki value dega
     //    //agar condition[True hui to st index ke liye chalega], condition[False hui to last index ke liye chalega]
     //     static int search(int[] num,int target, boolean firstindex){
-    //         int ans = -1;
-
+    //         int ans = -1; //--------
     //         int st = 0;
     //         int end = num.length-1;
 
     //     while(st<=end){
-    //         int mid = (st + end)/2;
+    //         int mid = st + (end-st)/2;
 
     //         if(target<num[mid]){
     //             end = mid-1;
@@ -119,27 +120,26 @@ public class d_3BS1 {
     //         }
     //         else{
     //             ans = mid;
-
-    //             //true he to mid se left side me fir se chala dega 
+    //             //--------------true he to mid se left side me fir se chala dega 
     //             if(firstindex){
     //                 end = mid-1;
     //             }
-    //             //false he to mid se right side me fir se chala dega 
-    //             //lastindex chalayega
+    //             //-----------------false he to mid se right side me fir se chala dega last position of target element find karne ke liye
     //             else{ 
     //                 st = mid+1;
     //             }
     //         }
     //     }
-
     //     return ans;   
     //     }
 
 
+    
+    
 
 
 
-    /**********[Amazone ques..]*******find the position of the element in sorted array of infinity number**************** */
+    /**********[Amazone ques..]*******find the position of the element in sorted array of "infinity number"**************** */
 
     // public static void main(String[] args) {
     //     int[] arr = {2,3,5,9,14,16,18,19,21,45,56,58,60,61,62,63,64,65,66,67,68,69,70};//--infinite length
@@ -151,10 +151,10 @@ public class d_3BS1 {
 
     //     int start=0;
     //     int end=1;
-    //     while(end <arr.length && target > arr[end]){
+    //     while(end <arr.length && target > arr[end]){  //-----
     //         int newstart = end+1;
 
-    //         end = end + (end - start +1) * 2;
+    //         end = end + (end - start +1) * 2;    //---> e - (s-1)
     //         start = newstart;
     //     }
 
@@ -209,7 +209,7 @@ public class d_3BS1 {
     //     }
 
     //     System.out.println("The peak value is: ");
-    //     return end;
+    //     return st; //---st and end in same position
     // }
 
     }//class

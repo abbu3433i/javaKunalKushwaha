@@ -1,7 +1,7 @@
 /****Abstract class-->jo kaam child class me same hone bala ho to usse hum abstract parent me declare kar denge taki unhe hum child class me use kar saken******/
 
 abstract class parent2{
-    parent2(){
+     parent2(){
         System.out.println("hello good morning");
     }
     public void bolo(){
@@ -33,7 +33,8 @@ public class a_53AbstractClass {
         // parent2 p = new parent2();   ****Abstract ka object nhi banega****
 
         child c = new child();
-        System.out.println(c);
+        
+
 
         // minali m = new minali();
 

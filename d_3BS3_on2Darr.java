@@ -4,8 +4,8 @@ public class d_3BS3_on2Darr {
     /****************To find target element in 2D sorted arr also mean matrix************* */
     public static void main(String[] args) {
         int[][] arr = {
-            {10,20,30,40},
-            {15,25,35,45},
+            {10,20,30,40},    //[1]---40 se check hoga agar target 40 se chota he to pura 40bala col-- kar do kyuki is col me sari value target se badi hi hen. [2] Ab uske piche 30bala col check hoga agar target 30se bada he to row++ kar do kyuki us row ki piche ki sari value choti hi hen 
+            {15,25,35,45}, 
             {28,29,37,49},
             {33,34,38,50}
         };

@@ -3,38 +3,38 @@ import java.util.Arrays;
 public class d_7CycS1 {
     /*************To find missing number in given range(0,arr.len)*********** */
 
-    // public static void main(String[] args) {
-    //     int[] arr = {0,4,2,1};
-    //     System.out.println("Missing element is:--");
-    //     System.out.println(cyclicSort(arr));
-    // }//main
+    public static void main(String[] args) {
+        int[] arr = {0,4,2,1};
+        System.out.println("Missing element is:--");
+        System.out.println(cyclicSort(arr));
+    }//main
 
-    // static int cyclicSort(int[] arr){
-    //     int i=0;
-    //     while (i<arr.length) {
-    //         int correct = arr[i];  //check karengen a[i] isliye liya he kyuki arr ki value 0 se st hui he jo index 0 pe hi aayegi mtlb sari value apni value index pe hi aayegi..
-    //         //agar arr ki value uske kudh ki index ki value se not equal ho to swap kar do...
-    //         if(arr[i]<arr.length && arr[i] != arr[correct]){   
-    //             swap(arr, i, correct);
-    //         }
-    //         else{
-    //             i++;
-    //         }
-    //     }
-    //    //Missing number find here----
-    //     for (int index = 0; index < arr.length; index++) {
-    //         if(arr[index]!=index){
-    //             return index;
-    //         }
-    //     }
-    //     return arr.length;  //means N value which is out of the arr.length
-    // }
+    static int cyclicSort(int[] arr){
+        int i=0;
+        while (i<arr.length) {
+            int correct = arr[i];  //check karengen a[i] isliye liya he kyuki arr ki value 0 se st hui he jo index 0 pe hi aayegi mtlb sari value apni value index pe hi aayegi..
+            //agar arr ki value uske kudh ki index ki value se not equal ho to swap kar do...
+            if(arr[i]<arr.length && arr[i] != arr[correct]){   
+                swap(arr, i, correct);
+            }
+            else{
+                i++;
+            }
+        }
+       //Missing number find here----
+        for (int index = 0; index < arr.length; index++) {
+            if(arr[index]!=index){
+                return index;
+            }
+        }
+        return arr.length;  //means N value which is out of the arr.length
+    }
 
-    // static void swap(int[] arr, int first, int second){
-    //     int temp = arr[first];
-    //     arr[first] = arr[second];
-    //     arr[second] = temp;
-    // }//
+    static void swap(int[] arr, int first, int second){
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
+    }//
 
 
 

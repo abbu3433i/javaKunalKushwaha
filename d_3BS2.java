@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class d_3BS2 {
     
-    // /**********peak[large no.] point of mountainArray[first arr increse then decrease]********* */
+    // /**********peak element in mountain array********* */
     
     // public static void main(String[] args) {
     //     int[] arr = {1,2,5,8,10,15,4,2,1,0};
@@ -25,7 +25,7 @@ public class d_3BS2 {
     //     }
 
     //     System.out.println("The peak value is: ");
-    //     return end;
+    //     return arr[end];  //----ye peak value de rha he
     // }
 
 
@@ -110,12 +110,85 @@ public class d_3BS2 {
     // }
 
 
+    /**********************Target element in Rotated sorted array*********************** */
+    // public static void main(String[] args) {
+    //     int[] arr = {4,5,6,7,0,1,2};
+    //     int ans = RSAtarget(arr, 1);
+    //     System.out.println(ans);
+    // }
+   
+    // static int RSAtarget(int[] arr, int target){
+    //     int pivot = pivotElem(arr);
+
+    //     if (pivot==-1) {  //---mtlb arr roted sorted nhi he 
+    //         return binarySearch(arr, target, 0, arr.length-1);
+    //     }
+    //     if (arr[pivot]==target) {
+    //         return pivot;
+    //     }
+    //     //------------------agar target bada hua arr ke st element se to left side me search hoga kyoki left side values ASC order me he or right side DESC order me he
+    //     if (target>arr[0]) {
+    //         return binarySearch(arr, target, 0, pivot-1);
+    //     }
+    //     else{
+    //         return binarySearch(arr, target, pivot+1, arr.length-1);
+    //     }
+    // }
 
 
+    // static int pivotElem(int[] arr){
+    //     int st = 0;
+    //     int end = arr.length-1;
+    //     while (st<=end) {
+    //         int mid = st + (end -st)/2;
+
+    //         if (arr[mid]>arr[mid+1]) {
+    //             return mid;
+    //         }
+
+    //         if (arr[mid-1]>arr[mid]) {
+    //             return mid-1;
+    //         }
+    //        //---------------------agar st bada he mid se to end
+    //         if (arr[st]>arr[mid]) {
+    //             end = mid-1;
+    //         }else{
+    //             st = mid+1;
+    //         }
+    //     }
+    //     return -1;
+    // }
+    // //-----------binary search
+    // static int binarySearch(int[] arr,int target, int st, int end){
+    // while(st<=end){
+        
+    //     int mid = (st + end)/2;
+
+    //     if(target<arr[mid]){
+    //         end = mid-1;
+    //     }
+
+    //     else if(target>arr[mid]){
+    //         st = mid+1;
+    //     }
+
+    //     else{
+    //         System.out.println("Your target value is in index");
+    //         return mid;
+    //     }
+    // }
+
+    // System.out.println("Something wrong!---normal binary search done");
+    // return -1;
+    // }
+
+
+    
+    
     /**********Rotational count how many times arr rotated********* */
     
     // public static void main(String[] args) {
-    //     int[] arr = {5,66,77,88,100,150,1,2,3,4};
+    //     int[] arr = {4,5,6,7,1,2,3};
     //     System.out.println(RotationalCount(arr));
     // }
 

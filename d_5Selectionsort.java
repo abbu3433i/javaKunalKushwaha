@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+//phele max value nikaro arr me se fir us max value ko last value ke sath swap kar do fir arr.len -1 kar do then again do
 public class d_5Selectionsort {
     /*******************Selection sort***************** */
     public static void main(String[] args) {

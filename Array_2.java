@@ -12,7 +12,8 @@ public class Array_2 {
             //     arr[i] = sc.next();
             // }
             
-            int[] arr = new int[5];
+            int[] arr   //-------declaration of array arr is defined in the stack 
+            arr = new int[5];  //----initialization actually here object is being created in the memory (heap)
             arr[0] = 1;
             arr[1] = 11;
             arr[2] = 15;

@@ -41,6 +41,37 @@ public class d_9Recursion1 {
     //     return fabo(n-1)+fabo(n-2);
     // }
 
+
+    //************************To find [x^n] power of x**************************** */
+    // public static void main(String[] args) {
+    //     int x=2 , n=5;
+    //     int ans = powerOfx(x, n);
+    //     System.out.println(ans);
+    // }
+
+    // static int powerOfx(int x,int n){
+    //  if (n==0) {
+    //     return 1;
+    //  }
+
+    // method 1
+
+    // int xPownm1 =  powerOfx(x, n-1);   // n=0 bale ne 1 return kiya, n1 bale ne 2, n2 bale ne 4, n3 bale ne 8, n4 bale ne 16, n5 bale ne 32
+    // int pown = x * xPownm1;  //------yahan har baar x ka multiply purana fun jo value return kar rha he usse ho rha he 
+    // return pown;
+
+
+    //method 2
+    // if (n%2==0) {
+    //     return powerOfx(x, n/2) * powerOfx(x, n/2);      //for even 
+    // }
+    // else{
+    //     return powerOfx(x, n/2) * powerOfx(x, n/2) * x;  //for odd   
+    // }
+
+    // }
+
+
 /************************Binary search using recursion*************************** */
     // public static void main(String[] args) {
     //     int[] arr = {1,2,3,5,6,66,68,78};
@@ -66,4 +97,6 @@ public class d_9Recursion1 {
     //     }
     // }
 
-}
+
+
+}//class 
